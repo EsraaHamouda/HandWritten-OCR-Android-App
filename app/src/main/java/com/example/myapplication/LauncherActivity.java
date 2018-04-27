@@ -20,19 +20,10 @@ public class LauncherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launcher);
 
-        GregorianCalendar expDate = new GregorianCalendar(2018, 6, 31); // midnight
-        GregorianCalendar now = new GregorianCalendar();
-
-
+       
         Button method1 = findViewById(R.id.camera_capture);
         Button method2 = findViewById(R.id.live_scan);
-        boolean isExpired = now.after(expDate);
-        if (isExpired) {
-            method1.setEnabled(false);
-            method2.setEnabled(false);
-
-        }
-
+        
 
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M && checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{Manifest.permission.CAMERA}, CAMERA_PERMISSION);
