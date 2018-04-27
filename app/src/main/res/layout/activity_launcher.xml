@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.LauncherActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/camera_capture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Method1: Capture a photo then extract the text"
+        android:textAllCaps="false"/>
+
+
+    <Button
+        android:id="@+id/live_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Method2:  Live scanning \n Camera view is already opened then\n press stop camera button  \n when you find the result is good"/>
+
+</LinearLayout>
